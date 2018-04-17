@@ -1,0 +1,2 @@
+class Sat < ApplicationRecord
+end

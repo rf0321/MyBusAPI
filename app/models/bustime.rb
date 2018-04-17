@@ -1,0 +1,2 @@
+class Bustime < ApplicationRecord
+end
