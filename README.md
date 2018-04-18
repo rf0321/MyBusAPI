@@ -32,7 +32,7 @@ api/v1/sun.json
 ## n番目の特定のデータのみ取得したい場合
 例:土曜日の4番目のデータ
 ```
-http://localhost:3000/api/v1/sat/specify.json?id=4
+api/v1/sat/specify.json?id=4
 ```
 # jsonの出力例
 ```json
