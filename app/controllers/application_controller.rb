@@ -5,10 +5,10 @@ class ApplicationController < ActionController::Base
   rescue_from Exception, with: :render_500
 
   def render_404
-    render :json => { 'error' =>'404:This page is not found'}
+    render :json => { message:'This page is not found', status:404 }
   end
 
   def render_500
-    render :json =>{ 'error' =>'500 internal server error'}
+    render :json =>{ message:'Internal server error', status:500 }
   end
 end
