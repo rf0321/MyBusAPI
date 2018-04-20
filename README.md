@@ -17,9 +17,20 @@ $ rails server
 ```
 <hostname>/api/v1/
 ```
-平日のデータを取得したい
+# 平日
+バスの本数が多いので朝、昼、夕にわけた
+
+朝のデータを取得したい
 ```
-api/v1/standard.json
+api/v1/weekday/morning.json
+```
+昼のデータを取得したい
+```
+api/v1/weekday/noon.json
+```
+夕のデータを取得したい
+```
+api/v1/weekday/afternoon.json
 ```
 土曜日のデータを取得したい
 ```
