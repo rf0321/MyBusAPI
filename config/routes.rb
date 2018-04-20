@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
   namespace :api, { format: 'json'} do
     namespace :v1 do
-      # standard day
-      namespace :standard do
-        get "/", :action => "index"
-        get "/specify", :action =>"show"
+      # Weekday has many time of bus. so divide to three time zone
+      namespace :weekday do
+        namespace :morning do
+          get "/", :action => "index"
+          get "/specify", :action =>"show"
+        end
+        namespace :noon do
+          get "/", :action => "index"
+          get "/specify", :action =>"show"
+        end
+        namespace :afternoon do
+          get "/", :action => "index"
+          get "/specify", :action =>"show"
+        end
       end
       # saturday
       namespace :sat do

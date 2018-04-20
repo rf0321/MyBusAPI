@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BustimeTest < ActiveSupport::TestCase
+class MorningTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

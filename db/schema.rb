@@ -10,9 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_17_120030) do
+ActiveRecord::Schema.define(version: 2018_04_20_084153) do
 
-  create_table "bustimes", force: :cascade do |t|
+  create_table "afternoons", force: :cascade do |t|
+    t.string "time"
+    t.string "money"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mornings", force: :cascade do |t|
+    t.string "time"
+    t.string "money"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "noons", force: :cascade do |t|
     t.string "time"
     t.string "money"
     t.datetime "created_at", null: false

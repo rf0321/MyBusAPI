@@ -1,6 +1,6 @@
-class CreateBustimes < ActiveRecord::Migration[5.2]
+class CreateAfternoons < ActiveRecord::Migration[5.2]
   def change
-    create_table :bustimes do |t|
+    create_table :afternoons do |t|
       t.string :time
       t.string :money
 
